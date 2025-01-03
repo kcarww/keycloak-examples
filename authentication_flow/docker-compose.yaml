@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/home/django/app
+    extra_hosts:
+      - "host.docker.internal:172.17.0.1"
+    environment:
+      - PYTHONUNBUFFERED=1

@@ -1,0 +1,19 @@
+### Como gerar um access_token
+POST http://localhost:8080/realms/teste-realm/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+username=user-teste@teste.com
+&password=123456
+&grant_type=password
+&client_id=test-client
+
+
+### como gerar um access_token e um id_token
+POST http://localhost:8080/realms/teste-realm/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+username=user-teste@teste.com
+&password=123456
+&grant_type=password
+&client_id=test-client
+&scope=openid

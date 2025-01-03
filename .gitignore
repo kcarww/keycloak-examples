@@ -1,1 +1,5 @@
 .docker/dbdata/
+.venv/
+*pyc
+__pycache__/
+keycloak/.docker/dbdata/
